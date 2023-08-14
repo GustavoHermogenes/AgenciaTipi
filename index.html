@@ -1,0 +1,462 @@
+<!DOCTYPE html> 
+
+<!-- a tag doctype diz ao navegador que estamos escrevendo em uma linguagem html -->
+
+<html lang="pt-Br">
+
+<head>
+
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- essa tag meta, é uma tag resonsavel por aplicar algumas definições, por exemplo, os caracteres, os softwares compatíveis ( neste caso o edge ) a escala/ largura do site entre outros -->
+
+    <title>Agência TIPI</title>
+
+        <!-- a tag title é uma tag usada para dar o título ao site, ou seja, o nome que ficará escrito la na aba de pesquisa -->
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- a tag link é usada para importar arquivos externos por meio de um link, propriamente dito, e neste caso estão sendo usados para importar um "reset", tirando todas as formatações implementadas pelo software, para parmitir a animação realizada pelo css, e por fim a importação do link de estilo, o qual será responsavel por implementar as formatações e estilos do meu css futuramente -->
+
+
+</head>
+
+ <!-- head é a tag "cabeça" do projeto, ou seja, esta é a tag usada para iniciar o trabalho e onde fica organizado informações como tamanho, compatibilidade, idioma, titulo e etc-->
+
+<body>
+    <!-- esta tag body é a reponsável por conter todas as informações do site no quesito visual, portanto nesta tag ficará todas as outras tags, se tornando literalmente todo o corpo, do cabeçalho até o rodapé -->
+
+    <!-- topo do site  -->
+
+    <header class="site topo" id="topo-fixo">
+
+        <!-- a tag header é a tag "cabeçalho" e é nesta aba onde será organizado as informações iniciais do projeta (parte visual) bem como o banner  
+        
+            já a tag ao lado denominada "class" é uma tag que permite chamar esse elemento e os elementos em seu interior lá no arquivo css, e estão tornando possivel estiliza-los-->
+
+        <!--cabeçalho do projeto-->
+    
+        <h1> Agência TIPI</h1>
+
+        <!-- tag h1 é normalmente usada para da títulos, indo de 1 a 6, a mesma possui uma importancia maior conforme menor o numero, ou seja a importancia daquela tag sera inversamente proporcional ao numero dado após o "h" -->
+
+        <div>
+
+        <!-- a tag div é uma tag "container" ou seja, a mesma é uma tag usada para organizar melhor as informações, em um formato de caixa -->
+
+        <button class="abrir-menu"></button>
+
+        <!-- a tag "button" é literalmente uma tag que adiciona um botão que permite o usuario final realizar algumas funcionalidades pré-definidas pelo programador-->
+
+        <nav class="menu">
+            
+            <!-- a tag nav, é uma tag que representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação. -->
+
+            <button class="fechar-menu"></button>
+
+            <!-- tag button ja foi dia antes -->
+
+            <ul>
+
+                <!-- a tag ul é uma tag usada para adicionar uma lista não ordenada, ou seja, que não é classificada numéricamente -->
+
+                <li> <a href="#" class="ativo">home</a></li>
+                <li> <a href="#">sobre</a></li>
+                <li> <a href="#">serviço</a></li>
+                <li> <a href="#">contato</a></li>
+
+                <!-- a tag li é uma tag que diz que o elemento contido dentro dela fará parte de uma lista, sendo-a ordenada (ol) ou desordenada/ não ordenada (ul) -->
+
+            </ul>
+
+            <div class="rede-social-topo">
+
+                <button>login</button>
+    
+                <ul>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">whatsapp</a></li>
+                    <li><a href="#">facebook</a></li>
+                </ul>
+
+                <!-- nesta seção o elementos e tags antes ditos, foram usados para adicionar as redes sociais, porem como links, e somente no css esses links serão transformados em icones -->
+    
+            </div>
+            
+        </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- a tag main é basicamente o mesma finalidade do header, contudo, em vez de ter somente o inicio, cabeçalho, nesta seção será contido todo o corpo do site e estruturas  com exceção do cabeçalho e do rodapé -->
+
+        <!--corpo do projeto-->
+
+        <section class="banner">
+
+            <!-- section é uma tag usada para criar seções no projeto, ou seja, uma tag usada para dividir esse projeto em algumas partes, de quantidades indefinidas -->
+
+            <img src="img/banner.png" alt="">
+            <img src="img/banner.png" alt="">
+            <img src="img/banner.png" alt="">
+
+            <!-- img são tag usadas para adicionar imagens no projeto, e a tag src ao seu lado, é a responsavel por procurar essa imagem em sua máquina -->
+
+        </section>
+
+        <section data-aos="fade-up" class="sobre-nos" >
+
+            <div class="site">
+
+                <div>
+
+                    <h3>Sobre a Agência</h3>
+
+                    <!-- como já foi dito antes essa tag é usada para titulo, e neste momento esta sendo usada para titular a seção sobre da agencia TIPI -->
+
+                        <p> A Agência TIPI é uma empresa de desenvola no mercado oferecendo soluções personalizadas e
+                            inovadoras para seus clientes. Com um time de profissionais altamente qualificados e
+                            experientes, a Agência TIPI se destaca pela sua capacidade de entender as necessidades de
+                            seus clientes e entregar projetos de alta qualidade, com prazos e custos competitivos.</p>
+
+                            <!-- a tag p, é uma tag que permite adicionar um paragrafo, por exemplo esse paragrafo generico acima -->
+
+                        <a href="#">saiba mais</a>
+
+                        <!-- a tag "a" é uma tag que permite adicionar um link sendo esse um elemento que permitirá o usuario a ir para outras paginas -->
+
+                </div>
+
+                <div data-aos="flip-up">
+                    <img src="img/imgSobre.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section data-aos="fade-up" class="fundoservico">
+
+            <h2 id="servicoTit">Serviço</h2>
+
+            <!-- a tag "id" é basicamente a mesma coisa da classe, contudo diferentemente da classe o Id so pode ser usado para chamar um elemento  -->
+
+            <div class="servico">
+
+                <!-- este container, foi usado para criar uma caixa grande, e dentro dessa caixa, foi criado outras caixas menores e nelas foram colocados: um titulo, uma imagem, um paragrafo e um link, estilizado em forma de botao -->
+
+                <div>
+
+                    <h2>Serviço 1</h2>
+
+                    <img data-aos="flip-up" src="img/servico1.png" alt="imagem ciano">
+
+                    <p>A Agência TIPI é uma empresa de desenvolvimento web que atua no mercado oferecendo soluções
+                        personalizadas e inovadoras para seus clientes. Com um time de profissionais altamente
+                        qualificados e experientes, a Agência TIPI se destaca pela sua capacidade de entender as
+                        necessidades de seus clientes e entregar projetos de alta qualidade, com prazos e custos
+                        competitivos.</p>
+
+                    <a href="#">mais...</a>
+
+                </div>
+
+                <div>
+
+                    <h2>Serviço 2</h2>
+
+                    <img data-aos="flip-up" src="img/serviço2.png" alt="imagem ciano">
+
+                    <p>A Agência TIPI é uma empresa de desenvolvimento web que atua no mercado oferecendo soluções
+                        personalizadas e inovadoras para seus clientes. Com um time de profissionais altamente
+                        qualificados e experientes, a Agência TIPI se destaca pela sua capacidade de entender as
+                        necessidades de seus clientes e entregar projetos de alta qualidade, com prazos e custos
+                        competitivos.</p>
+
+                    <a href="#">mais...</a>
+
+                </div>
+
+                <div>
+
+                    <h2>Serviço 3</h2>
+
+                    <img data-aos="flip-up" src="img/servico3.png" alt="imagem ciano">
+
+                    <p>A Agência TIPI é uma empresa de desenvolvimento web que atua no mercado oferecendo soluções
+                        personalizadas e inovadoras para seus clientes. Com um time de profissionais altamente
+                        qualificados e experientes, a Agência TIPI se destaca pela sua capacidade de entender as
+                        necessidades de seus clientes e entregar projetos de alta qualidade, com prazos e custos
+                        competitivos.</p>
+
+                    <a href="#">mais...</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section data-aos="fade-up" class="galeria">
+
+            <!-- nesta seção não há muito segredo pois, foi colocado somente imagens para formar a galeria, as quais por meio do JS e do CSS foi transformado em um carrossel de imagens -->
+            
+
+            <img data-aos="zoom-in" src="img/galeria1.png" alt="">
+
+            <img data-aos="zoom-in"src="img/galeria2.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria3.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria4.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria5.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria6.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria1.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria2.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria3.png" alt="">
+
+            <img data-aos="zoom-in" src="img/galeria4.png" alt="">
+
+        </section>
+
+        <section data-aos="fade-up" class="fundodepoimento">
+
+            <h2 id="titdepoimento">Depoimentos</h2>
+
+            <!-- neste h2 foi usado um ID, para deixar a palavra "depoimento" visualmente em formato de titulo -->
+
+            <div class="depoimento site">
+
+                <img data-aos="flip-up" src="img/depoimento.png" alt="">
+
+                <!-- aqui foi usado uma tag img, para adicionar uma imagem e logo abaixo foi usado um caixa grande (div) com diversas outras caixas menores dentro, que foram usadas como comentarios em formato de carrossel rotativo  -->
+
+
+                <div class="comentario">
+
+                    <div>
+
+
+                        <img src="img/avatar.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vel suscipit neque
+                            explicabo? Placeat omnis, ea neque doloribus voluptatem eveniet laboriosam laudantium illo
+                            consequatur debitis repellat nesciunt optio quia explicabo?</p>
+
+                        <div>
+
+                            <h3>nome:</h3>
+                            <h3>data:</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+
+                        <img src="img/avatar.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vel suscipit neque
+                            explicabo? Placeat omnis, ea neque doloribus voluptatem eveniet laboriosam laudantium illo
+                            consequatur debitis repellat nesciunt optio quia explicabo?</p>
+
+                        <div>
+
+                            <h3>nome:</h3>
+                            <h3>data</h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+
+                        <img src="img/avatar.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur vel suscipit neque
+                            explicabo? Placeat omnis, ea neque doloribus voluptatem eveniet laboriosam laudantium illo
+                            consequatur debitis repellat nesciunt optio quia explicabo?</p>
+
+                        <div>
+
+                            <h3>nome:</h3>
+                            <h3>data</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section data-aos="fade-up" class="fundoblog">
+
+            <!-- esta seção é basicamente a mesma do serviço, com exceção de que aqui o h2 não foi chamado por um id, fora isso o formato é o mesmo -->
+
+            <h2>Blog</h2>
+
+            <div class="blog">
+
+                <div>
+
+                    <h3>Blog 1</h3>
+
+                    <img src="img/blog1.png" alt="">
+
+                    <p>A Agência TIPI é uma empresa de desenvolvimento web que atua no mercado oferecendo soluções
+                        personalizadas e inovadoras para seus clientes. Com um time de profissionais altamente
+                        qualificados e experientes, a Agência TIPI se destaca pela sua capacidade de entender as
+                        necessidades de seus clientes e entregar projetos de alta qualidade, com prazos e custos
+                        competitivos.</p>
+
+                    <button>mais...</button>
+
+                </div>
+
+                <div>
+
+                    <h3>Blog 2</h3>
+
+                    <img src="img/blog2.png" alt="">
+
+                    <p>A Agência TIPI é uma empresa de desenvolvimento web que atua no mercado oferecendo soluções
+                        personalizadas e inovadoras para seus clientes. Com um time de profissionais altamente
+                        qualificados e experientes, a Agência TIPI se destaca pela sua capacidade de entender as
+                        necessidades de seus clientes e entregar projetos de alta qualidade, com prazos e custos
+                        competitivos.</p>
+
+                    <button>mais...</button>
+
+                </div>
+
+                <div>
+
+                    <h3>Blog 3</h3>
+
+                    <img src="img/blog3.png" alt="">
+
+                    <p>A Agência TIPI é uma empresa de desenvolvimento web que atua no mercado oferecendo soluções
+                        personalizadas e inovadoras para seus clientes. Com um time de profissionais altamente
+                        qualificados e experientes, a Agência TIPI se destaca pela sua capacidade de entender as
+                        necessidades de seus clientes e entregar projetos de alta qualidade, com prazos e custos
+                        competitivos.</p>
+
+                    <button>mais...</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <!-- tag fotter é basicamente a mesma coisa do header e do main, contudo nesta parta sera contido somente o rodapé, ou seja, será bem menos informação, e marcará o fim do projeto ( parte visual) -->
+
+        <section data-aos="fade-up" class="partefinal">
+            
+            <!-- nesta seção foi criado duas caixas, nas quais serão contidas informações de contato, botões de atalho para voltar em partes específicas do projeto e horário de atentimento/endereço -->
+
+            <div>
+
+                <!-- como foi dito antes nesta caixa esta as formas de contato, endereço horario de atendimento e redes sociais -->
+
+                <h2>Informações</h2>
+                <img src="img/logo2.png" alt="">
+                <h3>(11)99999-9999</h3>
+                <h3>Contato@agenciatipi.com.br</h3>
+
+                <div class="rede-social">
+                    <ul>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">whatsapp</a></li>
+                        <li><a href="#">facebook</a></li>
+                    </ul>
+                </div>
+                <h3>Av. Marechal Tito. 1500</h3>
+                <h3>Seg-Sex das 10h as 16h </h3>
+
+            </div>
+
+            <div class="menufinal">
+
+                <!-- já nessa esta os atalhos, duvidas/perguntas e politicas de privacidade  -->
+
+                <h2>Menu</h2>
+                <h3>home</h3>
+                <h3>sobre</h3>
+                <h3>serviço</h3>
+                <h3>contato</h3>
+                <h3>dúvidas frequentes</h3>
+                <h3>políticas de privacidade</h3>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="rodape">
+
+            <!-- aqui é literalmente o fim da parte visual, onde localiza-se as menções sobre os desenvolvedores dessa pagina e os direitos reservados ( nome de agencia que realizou o projeto ) -->
+
+        <div>
+
+            <p>direitos reservados ao Senac SMP - TIPI 01</p>
+        </div>
+
+        <div>
+
+            <p>Desenvolvido por Gustavo Hermogenes</p>
+
+        </div>
+
+     </section>
+
+    </footer>
+   
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <script src="js/slick.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="js/animacoes.js"></script>
+
+    <!-- aqui sao tags responsaveis por permitir que as animacoes sejam aplicadas, portanto não tem funcinalidade visual no projeto diretamente, somente é responsavel por tornar possivel acessar as galerias JS -->
+
+
+</body>
+
+
+</html>

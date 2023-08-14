@@ -1,0 +1,2040 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Exo:wght@300&family=Roboto+Mono&display=swap');
+
+/* tag esta sendo usada para importar uma fonte que eu não tinha no arquivo para este documento  */
+
+
+
+/*
+
+font-family: 'Anton', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+*/
+
+
+
+.site {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2,h3,h4,a, button{
+    color: #cb6600;
+    font-family:'Anton', sans-serif;
+    font-weight: bold;
+    padding: 2%;
+}
+
+*{
+    font-size: 20px;
+}
+
+
+
+
+/*sempre que for centralizar algo na pagina, usar esse codigo*/
+
+
+
+
+.topo {
+    display: flex;
+    justify-content: space-around;
+
+    /* este grupo esta sendo usado para jogar um elemento do lado do outro, torna-los flexiveis, com espacamento igual de um para o outro e com uma margin ao topo de 40px */
+
+}
+
+
+.topo div nav  {
+    display: flex;
+    align-items: center;
+
+    /* esta sendo usado para jugar um ao lado do outro, e alinhar verticalmente ao centro  */
+}
+
+.topo div ul {
+    display: flex;
+
+    /* esta somente deixando um ao lado do outro */
+}
+
+.topo h1 {
+    background:url(../img/logo01.svg) no-repeat;
+    width: 300px;
+    height: 52px;
+    text-indent: -99999px;
+
+
+    /* esta sendo usado para dar uma largura, uma altura, fazer com que o texto fique "invisivel" e aplicar uma imagem  */
+
+}
+
+
+
+
+.menu-fixo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background:rgba(255, 255, 255, 0.911);
+    animation:100s ease-in-out;
+    box-shadow: 0 5px 15px rgba(51, 51, 51, 0.787);
+
+    /* primeiro é o valor na horizontal, o segundo é na vertical, e o terceiro é de desfoque */
+    
+}
+
+
+
+
+
+/* inicio da tag menu*/
+
+
+
+
+
+.menu a {
+    font-family: 'Anton', sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-right: 10px;
+    border-radius: 5px 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+
+    /* este grupo esta sendo usado para estilizar ao menu, mais especificadante as palavras. deixando-as em maiusculo, na cor preta, com a fonte correta, o tamanho, a distancia umas das outras e sem nenhuma decoração  */
+
+}
+
+.menu a:hover {
+    color: #cb6600;
+    cursor: pointer;
+    font-size: 26px;
+
+    /* aqui ta estilizando a mesma coisa mais somente ao passar o mouse no elemento  */
+
+}
+
+.ativo{
+    color: #cb6600 !important;
+}
+
+
+
+
+
+
+/*inicio da tag rede-social*/
+
+
+
+
+
+
+.rede-social-topo {
+    text-align: center;
+
+    /* aqui esta somente alinhando o texto ao centro horizantalmente  */
+
+}
+
+
+.rede-social-topo button {
+    margin-bottom: 5px;
+    font-family: 'Anton', sans-serif;
+    background-color: #cb6600;
+    padding: 0px 18px;
+    font-size: 20px;
+    color: #333;
+
+    /* esta estilizando o botao, sua cor de fundo, seu tamanho interno e tamanho da fonte */
+}
+
+.rede-social-topo button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    color: #cb6600;
+    
+
+    /* a mesma coisa contudo somente ao passar o mouse */
+}
+
+
+.rede-social-topo a {
+    text-decoration: none;
+    padding: 10px 18px;
+    background-color: rgb(70, 65, 65);
+    border-radius: 60px;
+    display: block;
+    text-indent: -99999px;
+    margin-right: 5px;
+
+
+    /* aqui esta sendo estilizado o link das redes socias que esta em formato de texto, e transformando-as nos icones  */
+
+}
+
+
+.rede-social-topo a:nth-child(3){
+    margin: 0px;
+
+    /* aqui esta usando uma pseudo-classe para tirar a margin do terceiro "filho"  */
+}
+
+
+.rede-social-topo a:hover {
+    cursor: pointer;
+
+
+    /* esta fazendo com que toda vez que passar o mouse sobre o elemento, o curso ira mudar para ponteiro*/
+
+}
+
+.rede-social-topo ul li:last-child a {
+    margin-right: 0;
+}
+
+
+
+/*whats*/
+
+
+/* neste grupo esta apenas alterando o texto para imagem, ou seja, tranformando aqueles links das redes sociais que foi colocado no HTML para a PNG dos icones  */
+
+.rede-social-topo  ul li:nth-child(1) a{
+    background: url(../img/WhatsPreto.svg)no-repeat;
+}
+.rede-social-topo  ul li:nth-child(1) a:hover{
+    background: url(../img/whats.png)no-repeat;
+}
+
+
+
+/*insta*/
+
+
+
+.rede-social-topo  ul li:nth-child(2) a{
+    background: url(../img/instaPreto.svg)no-repeat;
+}
+
+.rede-social-topo  ul li:nth-child(2) a:hover{
+    background: url(../img/insta.png)no-repeat;
+}
+
+
+
+/*face*/
+
+
+
+.rede-social-topo  ul li:nth-child(3) a{
+    background: url(../img/facepreto.svg)no-repeat;
+}
+
+.rede-social-topo  ul li:nth-child(3) a:hover{
+    background: url(../img/face.png)no-repeat;
+}
+
+
+
+
+
+/*tag banner*/
+
+
+
+
+
+
+
+.banner {
+    max-width: 1920;
+    width: 100%;
+
+    /* aqui esta configurando o banner para pegar sempre 100% da tela, ate uma largura maxima de 1920px */
+
+}
+
+.banner .slick-next {
+    right: 40px;
+
+    /* esta jogando a setinha 40px a direita */
+
+}
+
+
+.banner .slick-prev:before, 
+.banner .slick-next:before {
+    font-size: 40px;
+    color: #cb6600;
+
+
+    /* esta selecionando o tamanho da setinha e a cor */
+}
+
+.banner .slick-prev {
+    left: 25px;
+    z-index: 1;
+
+    /* jogando a setinha da esquerda a 25px, e trazendo ele a frente do elemento (que nesta situação e a imagem do banner) */
+}
+
+
+.banner .slick-dots li button::before {
+    font-size: 13px;
+    color: #cb6600;
+
+    /* esta setando o tamanho e a cor dos dots  */
+
+}
+
+
+
+
+/*tag sobre */
+
+
+
+
+
+
+
+.sobre-nos {
+    padding: 50px 0;
+}
+
+.sobre-nos div{
+    display: flex; 
+    justify-content: space-around;
+
+
+
+    /* esta jogando um elemento ao lado do outro e dando um espaço igual para todos os elementos */
+}
+
+.sobre-nos div div {
+    flex-direction: column;
+    width: 45%;
+
+    /* esta dando uma largura maxima e deixando os elementos em forma de coluna  */
+}
+
+.sobre-nos div div:nth-child(1) {
+    justify-content: center;
+    border: solid 2px black;
+    border-radius: 10px;
+
+
+    /* esta jogando o elemento ao centro, dando uma borda e uma leve curvatura para essa borda */
+
+}
+
+
+
+.sobre-nos div div h3 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    letter-spacing: 3px;
+
+    /* aqui esta estilizando o texto somente */
+
+
+}
+
+.sobre-nos div div p {
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    flex-grow: 1;
+
+    /* aqui esta estilizando o texto somente */
+}
+
+.sobre-nos div div a {
+    text-align: end;
+    text-decoration: none;
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 10px 10px;
+    border: solid 2px black;
+    margin: 0px 20px 20px 0px;
+
+
+    /* aqui esta estiizando o botao e tambem arrumando sua posição da esquerda para a direita */
+
+
+}
+
+.sobre-nos div div a:hover {
+    background-color:#cb6600;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px;
+    border: solid 2px black;
+    font-size: 18px;
+
+    /* estilizando o botao mas somente quando passar o mouse  */
+}
+
+.sobre-nos img {
+    width: 100%;
+    border: solid 3px black;
+    border-radius: 31px 31px;
+
+
+    /* dando uma borda a imagem e configurando pra ela fica sempre com 100% da sua largura */
+}
+
+
+
+
+
+/*tag serviço*/
+
+
+
+
+
+
+.servico {
+    display: flex;
+    justify-content: center;
+
+     /* esta jogando um elemento ao lado do outro e dando um espaço igual para todos os elementos */
+}
+
+.fundoservico{
+    background: url(../img/fundoservico.png) no-repeat center;
+    background-attachment: fixed;
+    padding: 0px 0px 40px 0px;
+
+    /* esta somente setando a imagem de fundo e deixando ele fixo na tela   */
+}
+
+.servico div {
+    width: 20%;
+    text-align:center;
+    padding: 20px;
+    margin-right: 20px;
+    background-color:#f2f2f2;
+    border-radius: 25px;
+
+    /* esta configurando o tamanho, cor de fundo e jogando todos os elementos para o centro  */
+
+}
+.servico div:nth-child(3) {
+    margin-right: 0px;
+
+    /* tirando a margin a terceira div */
+}
+
+
+.servico div h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+    /* jogando ao centro, alterando o tamanho e dando um espaçamento pra baixo */
+}
+
+.servico div img {
+    width: 80%;
+    border-radius: 20px;
+    border: solid 2px #cb6600;
+
+
+    /* dando uma borda e um tamanho para a imagem */
+}
+
+.servico div p {
+    text-align: justify;
+    margin: 20px 20px;
+    font-size: 20px;
+    line-height: 20px;
+
+
+    /* estilizando o paragrafo  */
+}
+
+.servico div a {
+    text-decoration: none;
+    padding: 3px 10px;
+    border: solid 2px #cb6600;
+    border-radius: 10px;
+    font-size: 18px;
+    float: right;
+
+
+    /* estilizando os links como um botao e a posição da esquerda para a direita */
+    
+}
+
+.servico div a:hover{
+    background-color: #cb6600;
+    cursor: pointer;
+    color:black;
+    border: solid 2px black;
+
+
+    /* estilizando para quando passar o mouse  */
+    
+}
+
+#servicoTit {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #cb6600;
+    padding: 50px 
+    0px;
+
+    /* estilizando o titulo, contudo esse não esta em classe e sim em id, por isso a forma diferente de chamar. Mas as tags são as mesmas */
+}
+
+
+/*galeria*/
+
+.galeria{
+    display: flex;
+    justify-content: space-around;
+
+     /* esta jogando um elemento ao lado do outro e dando um espaço igual para todos os elementos */
+}
+
+.galeria div{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 90%;
+
+
+   /* dando um tamanho e uma margin em cima e em baixo  */
+}
+
+.galeria .slick-next {
+    right: 10px;
+}
+
+
+.galeria .slick-prev:before, 
+.galeria .slick-next:before {
+    font-size: 40px;
+    color: #cb6600;
+    display: none;
+}
+
+.galeria .slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+
+/* acima esta configurando as setinhas */
+
+/*depoimento*/
+
+
+.fundodepoimento{
+    background: url(../img/fundodepoimento.png);
+    background-attachment: fixed;
+    padding: 30px 0px;
+
+
+    /* esta colocando uma imagem e fixando ela na tela  */
+}
+
+.depoimento{
+    display: flex;
+
+    /* jogando um elemento ao lado do outro  */
+}
+.depoimento img{
+    max-width: 30%;
+    max-height: 70%;
+    margin-right:5%;
+    border-radius: 25px;
+    /* esta configurando um tamanho e largura maxima da imagem  */
+}
+
+
+.comentario{
+    max-width: 70%;
+    max-height: 65%;
+    padding: 30px; 
+    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #f2f2f2;
+
+
+    /* esta selecionando um tamanho maximo, borda, tamanho, centralizando e dando um tamanho */
+}
+
+#titdepoimento{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    text-align: center;
+
+
+    /* estilizando o titulo, seu tamanho estilo da fonte, centralizando e etc */
+}
+.comentario img{
+    max-width: 60px;
+    display: inline;
+
+    /* setando o tamanho maximo  */
+}
+
+.comentario p{
+    margin: 40px 0px;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 50px;
+
+
+    /* estilizando a fonte, e o tamanho do texto */
+}
+
+.comentario h3{
+    display: inline;
+    margin-right: 40%;
+}
+
+.comentario h3:nth-child(2){
+    margin-right: 0%;
+}
+
+.comentario .slick-next {
+    right: 15px;
+}
+
+
+.comentario .slick-prev:before, 
+.comentario .slick-next:before {
+    font-size: 30px;
+    color: #e10e0e;
+    
+    
+}
+
+.comentario .slick-prev {
+    left: 15px;
+    z-index: 1;
+}
+
+
+/*Blog*/
+
+
+
+.fundoblog h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0px ;
+    margin: 50px 0px;
+
+    /* configurando o tamanho e centralizando  */
+}
+
+
+.blog{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    /* jogando os elementos um para o lado do outro centralizando o mesmo  */
+
+}
+
+.blog div{
+    max-width: 20%;
+    padding: 20px;
+    background-color: #3b3b3b;
+    margin-right: 40px; 
+    text-align: center;
+
+
+    /* centralizando os elementos, dando o tamanho e uma cor de fundo  */
+} 
+
+
+.blog :nth-child(3){
+    margin-right: 0px;
+}
+
+.blog h3{
+    font-size: 34px;
+    margin: 20px 0px;
+}
+
+.blog img{
+    width: 80%;
+}
+
+.blog p{
+    color: #f2f2f2;
+    margin: 20px 0px;
+    font-size: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.blog button{
+    padding: 10px;
+    background-color: #cb6600;
+    border-radius: 15px;
+    color: #f2f2f2; 
+    text-decoration: none;
+    align-self: flex-end;
+    float: right;
+
+
+    /* configurando a cor e tamanho, borda e posição  */
+}
+
+/*parte final*/
+
+
+
+.partefinal{
+    background: url(../img/fundoservico.png)no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+    /* neste bloco estou jogando o elementos internos um para o lado do outro, alinhando no centro, colocando uma imagem de fundo e fixando ela na tela  */
+}
+
+.partefinal img{
+    margin: 20px 0px;
+}
+
+.partefinal div{
+    background-color:#f2f2f2;
+    margin: 30px 0px;
+    padding-bottom: 10px;
+}
+
+.partefinal h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.partefinal h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #868484;
+    flex-grow: 1;
+
+
+    /* flex-grow é um código usado para dar um espaçamento maior em determinado item, por exemplo em um texto, que ocupara uma área maior */
+}
+
+.partefinal h3:hover{
+    cursor: pointer;
+    font-size: 32px;
+}
+
+
+.partefinal div:nth-child(1){
+    margin-right: 5%;
+    width: 30%;
+}
+ .partefinal div:nth-child(1) h3{
+    margin-bottom: 10px;
+ }
+
+.partefinal div div{
+   margin: 0px;
+}
+
+.menufinal{
+    width: 30%;
+}
+
+.rede-social ul{
+    display: flex;
+    justify-content: center;
+}
+
+.rede-social a{
+    justify-content: center;
+    text-decoration: none;
+    padding: 22px 30px;
+    background-color: rgb(70, 65, 65);
+    border-radius: 60px;
+    display: block;
+    text-indent: -99999px;
+    margin-right: 5px;
+
+
+    /* basicamente a mesma mecanica dos elementos de rede-social do topo, visando transformar o nome ( texto ) no icone */
+}
+
+
+.rede-social a:nth-child(3){
+    margin: 0px;
+}
+
+
+.rede-social a:hover {
+    cursor: pointer;
+}
+
+.rede-social ul li:last-child a {
+    margin-right: 0;
+}
+
+
+
+/*whats*/
+
+
+.rede-social  ul li:nth-child(1) a{
+    background: url(../img/WhatsPreto.svg)no-repeat;
+}
+
+
+/*insta*/
+
+
+.rede-social  ul li:nth-child(2) a{
+    background: url(../img/instaPreto.svg)no-repeat;
+}
+
+
+/*face*/
+.rede-social  ul li:nth-child(3) a{
+    background: url(../img/facepreto.svg)no-repeat;
+}
+
+
+/*rodape*/
+
+
+
+.rodape{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+}
+.rodape div{
+    padding: 10px 0px;
+}
+.rodape :nth-child(2){
+    background-color:#f2f2f2;
+}
+
+/* de 1200px a frente será para desktop - FIM*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* layout página contato */
+
+.form{
+    padding: 50px 0;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.form h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+
+.form form{
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5%;
+    border: solid 1px #333;
+    border-radius: 25px;
+}
+
+.form form div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.form input, 
+.form textarea{
+    width: 98%;
+    padding: 2% 0;
+    margin-bottom: 5%;
+    background: #fff;
+    color: #cb6600;
+    font-size: 1em;
+    font-weight: 500;
+    border: solid 1px #333;
+    text-indent: 10px;
+}
+
+.form textarea{
+    resize: none;
+    height: 175px;
+}
+
+.form form div:nth-child(2) div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 98%;
+}
+
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #cb6600;
+    font-size: 1em;
+    text-indent: 10px;
+}
+
+.form form input[type=submit],
+.form form button{
+    width: 45%;
+    color: #333;
+    background-color: #cb6600;
+    font-weight: 200;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    border: solid 1px #333
+}
+
+.form form input[type=submit]:hover,
+.form form button:hover{
+    background-color: #333;
+    color: #cb6600;;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* pg SOBRE */
+
+
+
+.sobre1 {
+
+    padding: 50px 0px;
+  
+  }
+  
+  .sobre1 div {
+  
+    display: flex;
+  
+    justify-content: space-around;
+  
+  }
+  
+  #titulo {
+  
+    font-size: 35px;
+  
+    text-align: center;
+  
+    text-transform: uppercase;
+  
+    color: #cb6600;
+  
+    font-family: "Anton", sans-serif;
+  
+    letter-spacing: 5px;
+  
+  }
+  
+  .sobre1 div div {
+  
+    flex-direction: column;
+  
+    width: 45%;
+  
+    justify-content: space-around;
+  
+  }
+  
+  #contsobre1 {
+  
+    border: solid thin #333;
+  
+    border: solid 2px;
+  
+    border-radius: 25px;
+  
+    padding: 20px 5px;
+  
+    text-align: center;
+  
+  }
+  
+  .sobre1 div div:nth-child(1) {
+  
+    justify-content: center;
+  
+  }
+  
+  
+  
+  
+  .sobre1 div div h2 {
+  
+    text-align: center;
+  
+    font-family: antn;
+  
+    font-weight: bold;
+  
+    font-size: 25px;
+  
+    text-transform: uppercase;
+  
+    margin-bottom: 30px;
+  
+    letter-spacing: 5px;
+  
+    color: #cb6600;
+  
+    font-family: "Anton", sans-serif;
+  
+  }
+  
+  .sobre1 div div p {
+  
+    font-size: 18px;
+  
+    line-height: 30px;
+  
+    letter-spacing: 1px;
+  
+    flex-grow: 1;
+  
+    text-align: none;
+  
+    font-weight: bold;
+  
+  }
+  
+  .sobre1 button {
+  
+    align-self: end;
+  
+    cursor: pointer;
+  
+    font-size: 18px;
+  
+    background-color: #cb6600;
+  
+    color: #333;
+  
+    padding: 5px 15px;
+  
+    border-radius: 5px;
+  
+    margin-bottom: 1px;
+  
+  }
+  
+  .sobre1 button:hover {
+  
+    background-color: rgb(33, 122, 150);
+  
+  }
+  
+  .sobre1 img {
+  
+    width: 100%;
+  
+    border: solid 2px #333;
+  
+    border-radius: 30px ;
+  
+  }
+  
+  
+  
+  
+  /*Sobre 2*/
+  
+  .sobre2 {
+  
+      padding: 50px 0px;
+  
+    }
+  
+    .sobre2 div {
+  
+      display: flex;
+  
+      justify-content: space-around;
+  
+    }
+  
+    #titulo {
+  
+      font-size: 35px;
+  
+      text-align: center;
+  
+      text-transform: uppercase;
+  
+      color: #cb6600;
+  
+      font-family: "Anton", sans-serif;
+  
+      letter-spacing: 5px;
+  
+    }
+  
+    .sobre2 div div {
+  
+      flex-direction: column;
+  
+      width: 45%;
+  
+      justify-content: space-around;
+  
+    }
+  
+    #contsobre2 {
+  
+      border: solid thin #333;
+  
+      border: solid 2px;
+  
+      border-radius: 25px;
+  
+      padding: 20px 5px;
+  
+      text-align: center;
+  
+    }
+  
+    .sobre2 div div:nth-child(1) {
+  
+      justify-content: center;
+  
+    }
+  
+   
+  
+    .sobre2 div div h2 {
+  
+      text-align: center;
+  
+      font-family: antn;
+  
+      font-weight: bold;
+  
+      font-size: 25px;
+  
+      text-transform: uppercase;
+  
+      margin-bottom: 30px;
+  
+      letter-spacing: 5px;
+  
+      color: #cb6600;
+  
+      font-family: "Anton", sans-serif;
+  
+    }
+  
+    .sobre2 div div p {
+  
+      font-size: 18px;
+  
+      line-height: 30px;
+  
+      letter-spacing: 1px;
+  
+      flex-grow: 1;
+  
+      text-align: none;
+  
+      font-weight: bold;
+  
+    }
+  
+    .sobre2 button {
+  
+      align-self: end;
+  
+      cursor: pointer;
+  
+      font-size: 18px;
+  
+      background-color: #cb6600;
+  
+      color: #333;
+  
+      padding: 5px 15px;
+  
+      border-radius: 5px;
+  
+      margin-bottom: 1px;
+  
+    }
+  
+    .sobre2 button:hover {
+  
+      background-color: rgb(33, 122, 150);
+  
+    }
+  
+    .sobre2 img {
+  
+      width: 100%;
+  
+      border: solid 2px #333;
+  
+      border-radius: 15px 15px;
+  
+    }
+  
+   
+  
+  
+  
+  
+  /*Sobre 3*/
+  
+  .sobre3 div div {
+  
+      flex-direction: column;
+  
+      width: 45%;
+  
+      justify-content: space-around;
+  
+    }
+  
+    #contsobre3 {
+  
+      border: solid thin #333;
+  
+      border: solid 2px;
+  
+      border-radius: 25px;
+  
+      padding: 20px 5px;
+  
+      text-align: center;
+  
+    }
+  
+    .sobre3 div div:nth-child(1) {
+  
+      justify-content: center;
+  
+    }
+  
+   
+  
+    .sobre3 div div h2 {
+  
+      text-align: center;
+  
+      font-family: antn;
+  
+      font-weight: bold;
+  
+      font-size: 25px;
+  
+      text-transform: uppercase;
+  
+      margin-bottom: 30px;
+  
+      letter-spacing: 5px;
+  
+      color: #cb6600;
+  
+      font-family: "Anton", sans-serif;
+  
+    }
+  
+    .sobre3 div div p {
+  
+      font-size: 18px;
+  
+      line-height: 30px;
+  
+      letter-spacing: 1px;
+  
+      flex-grow: 1;
+  
+      text-align: none;
+  
+      font-weight: bold;
+  
+    }
+  
+    .sobre3 button {
+  
+      align-self: end;
+  
+      cursor: pointer;
+  
+      font-size: 18px;
+  
+      background-color: #cb6600;
+  
+      color: #333;
+  
+      padding: 5px 15px;
+  
+      border-radius: 5px;
+  
+      margin-bottom: 1px;
+  
+    }
+  
+    .sobre3 button:hover {
+  
+      background-color: rgb(33, 122, 150);
+  
+    }
+  
+    .sobre3 img {
+  
+      width: 100%;
+  
+      border: solid 2px #333;
+  
+      border-radius: 15px 15px;
+  
+    }
+  
+   
+  
+  
+  
+  
+  
+  /*Sobre 4*/
+  
+  .sobre4 {
+  
+      padding: 50px 0px;
+  
+    }
+  
+    .sobre4 div {
+  
+      display: flex;
+  
+      justify-content: space-around;
+  
+    }
+  
+    #titulo {
+  
+      font-size: 35px;
+  
+      text-align: center;
+  
+      text-transform: uppercase;
+  
+      color: #cb6600;
+  
+      font-family: "Anton", sans-serif;
+  
+      letter-spacing: 5px;
+  
+    }
+  
+    .sobre4 div div {
+  
+      flex-direction: column;
+  
+      width: 45%;
+  
+      justify-content: space-around;
+  
+    }
+  
+    #contsobre4 {
+  
+      border: solid thin #333;
+  
+      border: solid 2px;
+  
+      border-radius: 25px;
+  
+      padding: 20px 5px;
+  
+      text-align: center;
+  
+    }
+  
+    .sobre4 div div:nth-child(1) {
+  
+      justify-content: center;
+  
+    }
+  
+   
+  
+    .sobre4 div div h2 {
+  
+      text-align: center;
+  
+      font-family: antn;
+  
+      font-weight: bold;
+  
+      font-size: 25px;
+  
+      text-transform: uppercase;
+  
+      margin-bottom: 30px;
+  
+      letter-spacing: 5px;
+  
+      color: #cb6600;
+  
+      font-family: "Anton", sans-serif;
+  
+    }
+  
+    .sobre4 div div p {
+  
+      font-size: 18px;
+  
+      line-height: 30px;
+  
+      letter-spacing: 1px;
+  
+      flex-grow: 1;
+  
+      text-align: none;
+  
+      font-weight: bold;
+  
+    }
+  
+    .sobre4 button {
+  
+      align-self: end;
+  
+      cursor: pointer;
+  
+      font-size: 18px;
+  
+      background-color: #cb6600;
+  
+      color: #333;
+  
+      padding: 5px 15px;
+  
+      border-radius: 5px;
+  
+      margin-bottom: 1px;
+  
+    }
+  
+    .sobre4 button:hover {
+  
+      background-color: rgb(33, 122, 150);
+  
+    }
+  
+    .sobre4 img {
+  
+      width: 100%;
+  
+      border: solid 2px #333;
+  
+      border-radius: 15px 15px;
+  
+    }
+  
+   
+  
+  /*------------------------------------------------------------------------------------------*/
+  
+  /*------------------------------------------RESPONSIVO--------------------------------------*/
+  
+  /*------------------------------------------------------------------------------------------*/
+  
+  
+  
+  
+  @media (max-width: 600px) {
+  
+   /*--------------------------------------------Sobre------------------------------------------*/
+  
+    .sobre div {
+  
+      flex-direction: column-reverse;
+  
+      align-items: center;
+  
+    }
+  
+    .sobre img {
+  
+      margin-bottom: 10px;
+  
+    }
+  
+    .sobre div div {
+  
+      flex-direction: column;
+  
+      width: 95%;
+  
+      justify-content: space-around;
+  
+    }
+  
+    #contsobre {
+  
+      border: solid thin #333;
+  
+      border: solid 2px;
+  
+      border-radius: 25px;
+  
+      padding: 20px 5px;
+  
+      text-align: center;
+  
+    }
+  
+    .sobre div div:nth-child(1) {
+  
+      justify-content: center;
+  
+    }
+  
+  }
+  
+  
+  
+  
+  /* de 0 a 900 ate 1200 sera para note começo*/
+  
+  /*A partir daqui usamos o media para alinhar nosso site quando ele for comprimido a uma largura de 900px*/
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* de 601px até 900px, será para notebook - INÍCIO*/
+
+@media (max-width:900px){
+
+
+    /* nesta parte é a respeito da responsividade, a qual foi usada para adaptar o layout inicial para um tamanho menor, no caso, 900px. 
+    Esta é a unica exceção para baixo a mairia dos codigos foram ja usados anteriormente */
+   
+.topo{
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.topo h1{
+    margin: 5% 0;
+}
+
+.topo div nav{
+    display:flex ;
+}
+
+
+
+.depoimento{
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimento img{
+    max-width: 30%;
+    max-height: 70%;
+    border-radius: 25px;
+    margin-bottom: 3%;
+    margin-right: 0%;
+}
+
+.comentario{
+    max-width: 70%;
+    max-height: 65%;
+    padding: 30px; 
+    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+
+
+
+.partefinal div:nth-child(1){
+    width: 45%;
+    margin-right: 5%;
+}
+
+.menufinal{
+    width: 45%;;
+}
+
+
+
+}
+
+/* de 601px até 900px, será para notebook - FIM*/
+
+
+@media not all and (max-width:600px){
+
+
+    /* esta parte foi usada exclusivamente para setar, ou seja, configurar esse "botao" para que o mesmo so fosse visivel quando a tela fosse abaixo de 600px */
+
+
+
+    .abrir-menu, 
+    .fechar-menu{
+        display: none;
+    }
+}
+
+/* de 0px a 600px será para celular - INÍCIO */
+
+@media (max-width:600px){
+
+
+    /* nesta parte é a respeito da responsividade, a qual foi usada para adaptar o layout inicial para um tamanho menor, no caso, 600px. 
+    Esta é a unica exceção para baixo a mairia dos codigos foram ja usados anteriormente */
+
+    .topo{
+       justify-content: space-around;
+       margin-top: 20px;
+       flex-direction: row;
+    }
+    .topo div nav{
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .menu{
+        top: 0px;
+        background-color: rgba(76, 76, 76, 0.953);
+        height: 100%;
+        position: fixed;
+        max-width: 350px;
+        width: 50%;
+        z-index: 9;
+        right: -350px;
+        transition: right 1s ease-out;
+    }
+
+    .menu-ativo .menu{
+        right: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu ul li{
+        margin: 2% 0;
+    }
+    .menu a{
+        color:#f2f2f2;
+        letter-spacing: 3px;
+    }
+
+    .rede-social-topo{
+        margin: 15% auto;
+    }
+
+    .rede-social-topo ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .rede-social-topo a{
+        padding: 12px 30px;
+    }
+
+
+    .rede-social-topo  ul li:nth-child(1) a:hover{
+        background: url(../img/WhatsPreto.svg)no-repeat;
+    }
+    .rede-social-topo  ul li:nth-child(2) a:hover{
+        background: url(../img/instaPreto.svg)no-repeat;
+    }
+    .rede-social-topo  ul li:nth-child(3) a:hover{
+        background: url(../img/facepreto.svg)no-repeat;
+    }
+    
+
+    .abrir-menu{
+        background: url(../img/MicrosoftTeams-image\ \(2\).png);
+        background-size: cover;
+        padding: 20px;
+        order: 0;
+        display: block;
+        border: 0;
+    }
+
+    .fechar-menu{
+        background: url(../img/MicrosoftTeams-image\ \(3\).png);
+        background-size: cover;
+        padding: 20px;
+        order: 0;
+        display: block;
+        border: 0;
+        margin: 5%;
+    }
+
+
+    .banner{
+        display: none;
+    }
+
+
+
+
+
+
+
+    /* sobre */
+
+
+
+
+
+
+
+    .sobre-nos {
+        padding: 50px 0;
+    }
+    
+    .sobre-nos div{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .sobre-nos div div {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .sobre-nos img{
+        margin-bottom: 5%;
+    }
+    
+    .sobre-nos div div:nth-child(1) {
+        justify-content: center;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    
+    
+    .sobre-nos div div h3 {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 20px 0px;
+        letter-spacing: 3px;
+    }
+    
+    .sobre-nos div div p {
+        padding: 20px 5px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        flex-grow: 1;
+    }
+    
+    .sobre-nos div div a {
+        text-align: end;
+        text-decoration: none;
+        align-self: flex-end;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 5px 15px;
+        border-radius: 10px 10px;
+        border: solid 2px black;
+        margin: 0px 20px 20px 0px;
+    }
+    
+    .sobre-nos div div a:hover {
+        background-color:#cb6600;
+        color: rgb(0, 0, 0);
+        border-radius: 10px 10px;
+        border: solid 2px black;
+        font-size: 18px;
+    }
+
+
+
+
+    
+
+
+
+    /* serviço */
+
+
+
+
+
+
+
+.servico {
+    min-height: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundoservico{
+    background: url(../img/fundoservico.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.servico div {
+    width: 70%;
+    margin-bottom: 5%;
+}
+.servico div:nth-child(3) {
+    margin: 0px;
+}
+
+#servicoTit {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #cb6600;
+    padding: 50px 
+    0px;
+}
+
+
+
+
+
+/* galeria */
+
+.galeria div{
+    width: 80%;
+}
+.galeria .slick-next {
+    right: 40px;
+}
+
+
+.galeria .slick-prev:before, 
+.galeria .slick-next:before {
+    font-size: 40px;
+    color: #cb6600;
+}
+
+.galeria .slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+
+/* depoimento */
+
+
+
+
+
+
+.depoimento{
+    flex-direction: column;
+    align-items: center;
+}
+.depoimento img{
+    max-width: 30%;
+    max-height: 70%;
+    border-radius: 25px;
+    margin-bottom: 3%;
+    margin-right: 0%;
+}
+
+
+.comentario{
+    max-width: 70%;
+    max-height: 65%;
+    padding: 30px; 
+    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#titdepoimento{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    text-align: center;
+}
+.comentario img{
+    max-width: 60px;
+    display: inline;
+}
+
+.comentario p{
+    margin: 40px 0px;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 50px;
+}
+
+.comentario h3{
+    display: inline;
+    margin-right: 40%;
+}
+
+.comentario h3:nth-child(2){
+    margin-right: 0%;
+}
+
+
+
+
+
+
+
+/* blog */
+
+
+
+
+
+
+
+.fundoblog h2{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+.blog{
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog div{
+    max-width: 70%;
+    padding: 20px;
+    background-color: #3b3b3b;
+    text-align: center;
+    margin: 3% 5%;
+} 
+
+.blog div:nth-child(3){
+    margin-left: 0px;
+}
+
+.blog img{
+    max-width: 70%;
+}
+
+
+
+
+
+
+
+/* parte final e rodape */
+
+
+
+
+
+
+
+.partefinal{
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+}
+
+
+
+.partefinal div:nth-child(1){
+    width: 70%;
+    margin-right: 0px;
+}
+
+.menufinal{
+    width: 70%;
+}
+
+
+
+.rodape p{
+    font-size: 20px;
+
+}
+
+}
+
+/* de 0px a 600px será para celular - /FIM*/
